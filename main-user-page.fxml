@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="512.0" prefWidth="681.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.frame.MainUserPageController">
+   <center>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <top>
+            <TabPane prefHeight="513.0" prefWidth="428.0" style="-fx-background-color: white;" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+              <tabs>
+                <Tab text="Joined Conferences">
+                     <content>
+                        <AnchorPane prefHeight="512.0" prefWidth="427.0" style="-fx-background-color: black;">
+                           <children>
+                              <Label layoutX="21.0" layoutY="140.0" prefHeight="28.0" prefWidth="311.0" text="Conferences that you have joined" textFill="WHITE" underline="true">
+                                 <font>
+                                    <Font size="19.0" />
+                                 </font>
+                              </Label>
+                              <Label fx:id="LBlogin" layoutX="134.0" layoutY="56.0" prefHeight="58.0" prefWidth="195.0" text="Welcome !" textFill="WHITE">
+                                 <font>
+                                    <Font size="40.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="147.0" layoutY="105.0" text="hi there happy to see here" textFill="#888282" />
+                              <ListView layoutX="21.0" layoutY="178.0" prefHeight="200.0" prefWidth="385.0" />
+                              <ToolBar layoutX="18.0" layoutY="378.0" prefHeight="40.0" prefWidth="391.0">
+                                <items>
+                                  <Button mnemonicParsing="false" text="Exit" />
+                                    <Button mnemonicParsing="false" text="enter" />
+                                    <TextField prefHeight="25.0" prefWidth="278.0" />
+                                </items>
+                              </ToolBar>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab text="Created conferences">
+                     <content>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0">
+                           <center>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <AnchorPane prefHeight="489.0" prefWidth="427.0" style="-fx-background-color: black;">
+                                       <children>
+                                          <Label layoutX="21.0" layoutY="140.0" prefHeight="28.0" prefWidth="311.0" text="Conferences that you have created" textFill="WHITE" underline="true">
+                                             <font>
+                                                <Font size="19.0" />
+                                             </font>
+                                          </Label>
+                                          <Label fx:id="LBlogin2" layoutX="134.0" layoutY="56.0" prefHeight="58.0" prefWidth="195.0" text="Welcome !" textFill="WHITE">
+                                             <font>
+                                                <Font size="40.0" />
+                                             </font>
+                                          </Label>
+                                          <Label layoutX="102.0" layoutY="105.0" text="you can add as much as conferences as you want" textFill="#888282" />
+                                          <ListView layoutX="21.0" layoutY="178.0" prefHeight="200.0" prefWidth="385.0" />
+                                          <ToolBar layoutX="18.0" layoutY="378.0" prefHeight="40.0" prefWidth="391.0">
+                                             <items>
+                                                <Button mnemonicParsing="false" text="delete" />
+                                                <Button mnemonicParsing="false" text="enter" />
+                                                <TextField prefHeight="25.0" prefWidth="273.0" />
+                                             </items>
+                                          </ToolBar>
+                                          <ImageView fitHeight="27.0" fitWidth="26.0" layoutX="380.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../../../img/addlogo.jpg" />
+                                             </image>
+                                          </ImageView>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </AnchorPane>
+                           </center>
+                        </BorderPane>
+                     </content>
+                  </Tab>
+                <Tab text="Conferences">
+                     <content>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0">
+                           <center>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: black;" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <ListView layoutX="36.0" layoutY="146.0" prefHeight="251.0" prefWidth="362.0" />
+                                    <Label fx:id="LBlogin1" layoutX="138.0" layoutY="26.0" prefHeight="58.0" prefWidth="195.0" text="Goin us !" textFill="WHITE">
+                                       <font>
+                                          <Font size="40.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="100.0" layoutY="84.0" text="you are intrested in one of the conferences" textFill="#888282" />
+                                    <Label layoutX="138.0" layoutY="101.0" text=" don't hesitate to join then !!" textFill="#888282" />
+                                    <ToolBar layoutX="27.0" layoutY="397.0" prefHeight="40.0" prefWidth="377.0">
+                                      <items>
+                                        <Button mnemonicParsing="false" text="request to join" />
+                                      </items>
+                                    </ToolBar>
+                                 </children>
+                              </AnchorPane>
+                           </center>
+                        </BorderPane>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </top>
+      </BorderPane>
+   </center>
+   <left>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <AnchorPane prefHeight="389.0" prefWidth="253.0" style="-fx-background-color: white;">
+                     <children>
+                        <TextField layoutX="58.0" layoutY="62.0" prefHeight="29.0" prefWidth="133.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField layoutX="58.0" layoutY="113.0" prefHeight="29.0" prefWidth="133.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField layoutX="58.0" layoutY="168.0" prefHeight="29.0" prefWidth="133.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <TextField layoutX="56.0" layoutY="224.0" prefHeight="29.0" prefWidth="135.0">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </TextField>
+                        <Button fx:id="button_click" layoutX="141.0" layoutY="352.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="99.0" style="-fx-border-style: solid; -fx-border-width: 2px; -fx-border-color: #4CAF50; -fx-background-radius: 10; -fx-border-radius: 10;" text="save" />
+                        <Button fx:id="button_click1" layoutX="14.0" layoutY="352.0" mnemonicParsing="false" prefHeight="29.0" prefWidth="100.0" style="-fx-border-style: solid; -fx-border-width: 2px; -fx-border-color: #4CAF50; -fx-background-radius: 10; -fx-border-radius: 10;" text="cancel" />
+                        <Label layoutX="83.0" layoutY="12.0" text="UserName">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                        <Separator layoutX="27.0" layoutY="40.0" prefWidth="200.0" />
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </center>
+         <top>
+            <AnchorPane prefHeight="105.0" prefWidth="253.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="132.0" fitWidth="116.0" layoutX="63.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../img/user.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </top>
+      </BorderPane>
+   </left>
+</BorderPane>

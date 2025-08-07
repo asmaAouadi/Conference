@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="656.0" prefWidth="754.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.frame.CreateConferenceController">
+   <left>
+      <BorderPane prefHeight="370.0" prefWidth="253.0" BorderPane.alignment="CENTER">
+         <center>
+            <AnchorPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView editable="true" layoutY="452.0" prefHeight="200.0" prefWidth="312.0">
+                    <columns>
+                      <TableColumn prefWidth="75.0" text="C1" />
+                      <TableColumn prefWidth="75.0" text="C2" />
+                    </columns>
+                  </TableView>
+                  <ImageView fitHeight="280.0" fitWidth="421.0" layoutX="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../img/conference.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </left>
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <AnchorPane prefHeight="656.0" prefWidth="443.0" style="-fx-background-color: black;">
+               <children>
+                  <Label layoutX="85.0" layoutY="110.0" prefHeight="28.0" prefWidth="62.0" text="Creator" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="161.0" layoutY="109.0" prefHeight="29.0" prefWidth="225.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <Label fx:id="LBlogin" layoutX="85.0" layoutY="14.0" prefHeight="53.0" prefWidth="299.0" text="Create Conference" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="130.0" layoutY="58.0" text="Hi there enjoy creating your conference" textFill="#888282" />
+                  <Button fx:id="button_click1" layoutX="172.0" layoutY="612.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="229.0" style="-fx-border-style: solid; -fx-border-width: 2px; -fx-border-color: #4CAF50; -fx-background-radius: 10; -fx-border-radius: 10;" text="save" />
+                  <TextField layoutX="162.0" layoutY="276.0" prefHeight="29.0" prefWidth="225.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <DatePicker layoutX="162.0" layoutY="196.0" prefHeight="29.0" prefWidth="105.0" />
+                  <Label layoutX="87.0" layoutY="198.0" prefHeight="28.0" prefWidth="39.0" text="Date" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="59.0" layoutY="353.0" prefHeight="7.0" prefWidth="321.0" />
+                  <Button fx:id="button_click11" layoutX="38.0" layoutY="612.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="115.0" style="-fx-border-style: solid; -fx-border-width: 2px; -fx-border-color: #4CAF50; -fx-background-radius: 10; -fx-border-radius: 10;" text="Cancel" />
+                  <Label layoutX="11.0" layoutY="368.0" prefHeight="28.0" prefWidth="147.0" text="Add participants" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="91.0" layoutY="397.0" prefHeight="28.0" prefWidth="48.0" text="Max" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="12.0" layoutY="81.0" prefHeight="28.0" prefWidth="227.0" text="Conference informations" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="166.0" layoutY="138.0" prefHeight="19.0" prefWidth="188.0" text="the creator has to be an editor" textFill="#888282" />
+                  <Label layoutX="161.0" layoutY="226.0" text="the date has to not be at the same hour" textFill="#888282" />
+                  <Label layoutX="160.0" layoutY="243.0" prefHeight="11.0" prefWidth="253.0" text=" as another conference that you already have" textFill="#888282" />
+                  <Label layoutX="92.0" layoutY="277.0" prefHeight="28.0" prefWidth="48.0" text="Name" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="163.0" layoutY="305.0" prefHeight="19.0" prefWidth="223.0" text="you can not have the same name as " textFill="#888282" />
+                  <Label layoutX="159.0" layoutY="318.0" prefHeight="19.0" prefWidth="213.0" text="another conference that you created it" textFill="#888282" />
+                  <TextField layoutX="154.0" layoutY="442.0" prefHeight="29.0" prefWidth="235.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="50.0" layoutY="443.0" prefHeight="28.0" prefWidth="87.0" text="User name" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <ChoiceBox layoutX="156.0" layoutY="396.0" prefHeight="29.0" prefWidth="235.0" />
+                  <RadioButton layoutX="152.0" layoutY="559.0" mnemonicParsing="false" text="Role edit" textFill="#fdfdfd" />
+                  <Label layoutX="89.0" layoutY="513.0" prefHeight="28.0" prefWidth="48.0" text="Role" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="154.0" layoutY="471.0" prefHeight="19.0" prefWidth="223.0" text="you can not add the same user" textFill="#888282" />
+                  <CheckBox layoutX="157.0" layoutY="519.0" mnemonicParsing="false" text="Evaluator" textFill="WHITE" />
+                  <CheckBox layoutX="260.0" layoutY="518.0" mnemonicParsing="false" text="Editor" textFill="WHITE" />
+                  <CheckBox layoutX="343.0" layoutY="518.0" mnemonicParsing="false" text="Author" textFill="WHITE" />
+                  <Label layoutX="150.0" layoutY="575.0" prefHeight="19.0" prefWidth="249.0" text="if you check this the participants will be able" textFill="#888282" />
+                  <Label layoutX="153.0" layoutY="585.0" prefHeight="19.0" prefWidth="188.0" text="to modify his role" textFill="#888282" />
+                  <TextField layoutX="287.0" layoutY="196.0" prefHeight="31.0" prefWidth="36.0" promptText="HH">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField layoutX="343.0" layoutY="196.0" prefHeight="31.0" prefWidth="43.0" promptText="MM">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="329.0" layoutY="198.0" prefHeight="28.0" prefWidth="7.0" text=":" textFill="WHITE">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="86.0" layoutY="158.0" prefHeight="28.0" prefWidth="53.0" text="Theme" textFill="WHITE">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <TextField layoutX="162.0" layoutY="157.0" prefHeight="29.0" prefWidth="225.0">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
